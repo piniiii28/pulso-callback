@@ -1,0 +1,21 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="referrer" content="no-referrer">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'unsafe-inline'; base-uri 'none'; form-action 'none'">
+  <title>Volver a Pulso ML</title>
+</head>
+<body>
+  <h1>Redirigiendo a Pulso ML…</h1>
+  <p>Mantén Pulso ML abierto en este equipo.</p>
+  <p><a id="volver" href="http://127.0.0.1:8770/api/cuenta/callback" rel="noreferrer">Volver a Pulso ML manualmente</a></p>
+  <p>Si no puedes volver, pega la URL completa de esta página en «Pegar URL de redirección» dentro de la app. No la compartas.</p>
+  <script>
+    document.getElementById('volver').href =
+      "http://127.0.0.1:8770/api/cuenta/callback" + location.search;
+    location.replace("http://127.0.0.1:8770/api/cuenta/callback" + location.search);
+  </script>
+</body>
+</html>
